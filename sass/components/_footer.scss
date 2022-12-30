@@ -1,0 +1,32 @@
+.footer {
+    background-color: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.footer__about {
+    @media screen and (min-width: 480px) {
+            margin-bottom: 60px;
+        }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-left: 76px;
+            margin-bottom: 60px;
+        }
+}
+
+.in-footer.container {
+    
+    @media screen and (min-width: 480px) {
+       text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+       display: flex;
+       flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
+}
+

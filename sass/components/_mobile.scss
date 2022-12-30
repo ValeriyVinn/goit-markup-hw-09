@@ -1,0 +1,133 @@
+.mobile {
+    margin-left: auto;
+}
+
+.mobile__toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary-text-color);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    @media (min-width: 768px) {
+
+        display: none;
+    }
+}
+
+.mobile__toggle:hover,
+.mobile__toggle:focus {
+    color: var(--accent-color);
+}
+
+.mobile__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: var(--wite-color);
+    z-index: 1;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+
+}
+
+.mobile__container.is-open {
+    transform: translateX(0);
+}
+
+.mobile__container .mobile__toggle {
+    min-height: 40px;
+    min-width: 40px;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+   
+    color: var(--primary-text-color);
+
+}
+
+.mobile__container .mobile__toggle:hover,
+.mobile__container .mobile__toggle:focus {
+    color: var(--accent-color);
+}
+
+.mobile-menu {
+    padding: 20;
+    margin: 0;
+    
+    list-style: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__link {
+    color: #212121;
+    @include font (500, 40, 18.75, 0.02);
+}
+
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+ color: var(--accent-color);   
+}
+
+.mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px ;
+}
+
+.mobile-menu-contacts__list--tel {
+    margin-top: 306px;
+        margin-bottom: 32px;
+}
+
+.mobile-menu-contacts__list--mailto {
+    margin-bottom: 64px;
+}
+
+.mobile-menu-contacts__tel {
+    color: var(--accent-color);
+    @include font (500, 34, 39.84, 0.02);
+}
+
+.mobile-menu-contacts__mailto {
+    color:  #757575;
+    @include font (500, 24, 28, 0.02);
+    
+}
+
+.mobile-socials {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--accent-color);
+
+   
+}
+
+.mobile-socials__items .link {
+    color: var(--accent-color);
+    @include font (500, 18, 22, 0.02); 
+}
+
+ .mobile-socials__items+.mobile-socials__items {
+        margin-left: 10px;   
+    }
+
+.mobile-socials__items--slash {
+    color: #21212133;
+    ;
+}

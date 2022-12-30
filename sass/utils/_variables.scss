@@ -1,0 +1,95 @@
+/* Палітра: */
+
+/* Верхня лінія 
+#212121 #2196F3 #757575 #000000 #ECECEC #FFFFFF */
+
+/* Шапка
+#FFFFFF #2196F3 #2F303A */
+
+/* Особливості
+#212121 #757575 */
+
+/* Чим займаємося 
+#212121 */
+
+/* Наша команда
+ #212121 #757575 #FFFFFF #F5F4FA  */
+
+/* Підвал
+#FFFFFF #FFFFFF60%  #2196F3 #2F303A */
+
+/* Колір лого #000000 */
+/* Головний колір тексту  #212121 */
+/* Вторинний колір тексту #757575 */
+/* Адреса колір контактів  #D9D9D9 */
+/* Білий колір #FFFFFF */
+/* Акцент #2196F3 */
+/* Бекграунд секції #F5F4FA */
+/* Бекграунд шапки і футера #2F303A */
+/* Колір лайн верхньої лінії #ECECEC */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --adress-text-color: #FFFFFF60%;
+    --wite-color: #ffffff;
+    --accent-color: #2196f3;
+    --prymary-background-color: #f5f4fa;
+    --secondary-background-color: #2f303a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--wite-color);
+    font-family: Roboto, sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section-header {
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.feature__text,
+.team__text {
+    color: var(--secondary-text-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;  
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+            padding-bottom: 60px;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,14 @@
+.logo {
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    @include font (700, 26, 30.52, 0.03);
+
+    @media screen and (max-width: 767px) {
+            margin: 16px 0px;
+        }
+    
+}
+
+.logo__web {
+    color: #2196f3;
+}
